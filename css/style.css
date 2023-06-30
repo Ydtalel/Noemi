@@ -30,7 +30,7 @@ li {
 }
 
 header {
-  background-image: url("images/banner-bg.jpg");
+  background-image: url("../images/banner-bg.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: top left;
