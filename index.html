@@ -11,22 +11,65 @@
     <title>Diploma</title>
   </head>
   <body>
+    <!--header-->
     <header class="header">
       <div class="container">
         <div class="nav">
           <a href="#"><img src="svg/noemi-logo.svg" alt="logo" /></a>
           <ul class="menu text-h2">
-            <li><a href="#"></a>Главная</li>
-            <li><a href="#"></a>Посты</li>
-            <li><a href="#"></a>Статьи</li>
-            <li><a href="#"></a>Теги</li>
-            <li><a href="#"></a>Темы</li>
-            <li><a href="#"></a>Контакты</li>
+            <li><a class="text-h2" href="#">Главная</a></li>
+            <li><a class="text-h2" href="#">Посты</a></li>
+            <li><a class="text-h2" href="#">Статьи</a></li>
+            <li><a class="text-h2" href="#">Теги</a></li>
+            <li><a class="text-h2" href="#">Темы</a></li>
+            <li><a class="text-h2" href="#popup">Контакты</a></li>
           </ul>
         </div>
         <h1 class="intro text-h1">Блог о творчестве, спорте, и образе жизни</h1>
       </div>
     </header>
+    <!-- конец header-->
+    <!--popup-->
+    <div id="popup" class="overlay">
+      <div class="popup">
+        <a class="close" href="#"><img src="svg/form-x.svg" alt=""></a>
+        <div class="popup-content">
+          <h2 class="popup-title text-h1">Ваш фидбек</h2>
+          <div class="popup-divider"></div>
+          <h3 class="popup-subtitle text-h2">Как часто вы заходите на сайт?</h3>
+          <div class="popup-input">
+            <select class="popup-select text-h2">
+              <option value="everyday">Почти каждый день</option>
+              <option value="few-times-week">Пару раз в неделю</option>
+              <option value="few-times-month">Пару раз в месяц</option>
+            </select>
+          </div>          
+          <h3 class="popup-subtitle text-h2">Вы подписаны на e-mail рассылку?</h3>
+          <div class="popup-radio">
+            <label>
+              <input type="radio" name="subscription" value="yes" />
+              <span></span>
+              <span class="text-h2">Да</span>
+            </label>
+            <label>
+              <input type="radio" name="subscription" value="no" />
+              <span></span>
+              <span class="text-h2">Нет</span>
+            </label>
+          </div>
+          <p class="popup-text text-h2">
+            Расскажите, какой контент вы бы хотели видеть на нашем сайте?
+          </p>
+          <textarea
+            class="popup-textarea text-h2"
+            placeholder="Может, больше рецептов?"
+          ></textarea>
+          <button class="side-bar-subscribe-button popup-button" type="submit">Отправить</button>
+        </div>
+      </div>
+    </div>
+    <!--rконец popup-->
+    <!--trend-->
     <div class="trend">
       <div class="trend-title">
         <h2>Сейчас в тренде</h2>
@@ -34,8 +77,8 @@
       <div class="trend-container">
         <div class="trend-container-item item1">
           <div class="item-content">
-            <span class="item-title">Lifestyle</span>
-            <span class="item-title">INTERIOR</span>
+            <span class="item-title"><a href="#">Lifestyle</a></span>
+            <span class="item-title"><a href="#">INTERIOR</a></span>
             <h2 class="item-description">
               Сейчас в тренде: сад на подоконнике
             </h2>
@@ -43,7 +86,7 @@
         </div>
         <div class="trend-container-item item2">
           <div class="item-content">
-            <h3 class="item-title">Food</h3>
+            <h3 class="item-title"><a href="#">Food</a></h3>
             <h2 class="item-description">
               сыры на красивых картинках из интернета: какие они на вкус?
             </h2>
@@ -51,15 +94,15 @@
         </div>
         <div class="trend-container-item item3">
           <div class="item-content">
-            <span class="item-title">Lifestyle</span>
-            <span class="item-title">tRAVEL</span>
+            <span class="item-title"><a href="#">Lifestyle</a></span>
+            <span class="item-title"><a href="#">tRAVEL</a></span>
             <h2 class="item-description">СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ</h2>
           </div>
         </div>
         <div class="trend-container-item item4">
           <div class="item-content">
-            <span class="item-title">food</span>
-            <span class="item-title">health</span>
+            <span class="item-title"><a href="#">food</a></span>
+            <span class="item-title"><a href="#">health</a></span>
             <h2 class="item-description">
               Сейчас в тренде: сКОЛЬКО ВИТАМИНА c В ЛИМОНАХ?
             </h2>
@@ -67,6 +110,8 @@
         </div>
       </div>
     </div>
+    <!-- конец trend-->
+    <!--post & side-bar-->
     <div class="container">
       <div class="post-container">
         <div class="post-list">
@@ -91,8 +136,8 @@
             <div class="post">
               <div class="post-info">
                 <div class="post-category">
-                  <span>Travel</span>
-                  <span>Health</span>
+                  <span><a href="#">Travel</a></span>
+                  <span><a href="#">Health</a></span>
                 </div>
                 <h3 class="post-title">
                   10 мест, ради которых стоит проснуться на рассвете
@@ -112,8 +157,8 @@
             <div class="post">
               <div class="post-info">
                 <div class="post-category">
-                  <span>health</span>
-                  <span>lifestyle</span>
+                  <span><a href="#">Health</a></span>
+                  <span><a href="#">lifestyle</a></span>
                 </div>
                 <h3 class="post-title">
                   ЙОга для начинающих в домашних условиях
@@ -133,7 +178,7 @@
             <div class="post">
               <div class="post-info">
                 <div class="post-category">
-                  <span>music</span>
+                  <span><a href="#">music</a></span>
                 </div>
                 <h3 class="post-title">
                   Лучшие музыкальные фестивали этого лета
@@ -146,16 +191,19 @@
               <div class="post-text">
                 <p>
                   Лето на носу, а с ним и музыкальные фестивали. На каком же из
-                  них вы разобьете свою палатку?</p><br><p> Мы составили список лучших
-                  летних фестивалей по всему миру.
+                  них вы разобьете свою палатку?
+                </p>
+                <br />
+                <p>
+                  Мы составили список лучших летних фестивалей по всему миру.
                 </p>
               </div>
             </div>
             <div class="post">
               <div class="post-info">
                 <div class="post-category">
-                  <span>LYFESTYLE</span>
-                  <span>FOOD</span>
+                  <span><a href="#">LYFESTYLE</a></span>
+                  <span><a href="#">FOOD</a></span>
                 </div>
                 <h3 class="post-title">Наукоёмкий подход к кулинарии</h3>
                 <div class="post-author-date">
@@ -173,9 +221,9 @@
             <div class="post">
               <div class="post-info">
                 <div class="post-category">
-                  <span>Lifestyle</span>
-                  <span>INTERIOR</span>
-                  <span>art</span>
+                  <span><a href="#">Lifestyle</a></span>
+                  <span><a href="#">INTERIOR</a></span>
+                  <span><a href="#">art</a></span>
                 </div>
                 <h3 class="post-title">
                   делаем модные принты на подушках для интерьера
@@ -314,10 +362,10 @@
         </div>
       </div>
     </div>
+    <!--конец post & side-bar-->
     <div class="container">
       <div class="product-title">
         <h4>наши изделия</h4>
-        
       </div>
       <div class="product">
         <div class="product-card">
@@ -362,7 +410,9 @@
             </div>
             <div class="product-card-footer">
               <div class="price-container">
-                <span id="without-discount" class="price-discount text-h1">.</span>
+                <span id="without-discount" class="price-discount text-h1"
+                  >.</span
+                >
                 <span class="price text-h1">3500 ₽</span>
               </div>
               <button class="side-bar-subscribe-button buy-btn" type="submit">
@@ -382,7 +432,9 @@
             <div class="product-card-text">
               <p class="text-h3">
                 Необычная рамка для украшения дома из видео
-                <a href="#">«Как сделать рамку из подручных средств за 30 минут»</a>
+                <a href="#"
+                  >«Как сделать рамку из подручных средств за 30 минут»</a
+                >
               </p>
             </div>
             <div class="product-card-footer">
@@ -400,14 +452,15 @@
     </div>
     <div class="footer">
       <div class="footer-social">
-        <img class="foter-social-logo" src="svg/001-dribbble.svg" alt="">
-        <img class="foter-social-logo" src="svg/001-pinterest.svg" alt="">
-        <img class="foter-social-logo" src="svg/003-tumblr.svg" alt="">
+        <img class="foter-social-logo" src="svg/001-dribbble.svg" alt="" />
+        <img class="foter-social-logo" src="svg/001-pinterest.svg" alt="" />
+        <img class="foter-social-logo" src="svg/003-tumblr.svg" alt="" />
       </div>
       <div class="footer-copyrights">
-        <h3 class="footer-copyrights-text text-h1">Copyright © 2009–2019 City Blog LLC.</h3>
+        <h3 class="footer-copyrights-text text-h1">
+          Copyright © 2009–2019 City Blog LLC.
+        </h3>
       </div>
     </div>
-    
   </body>
 </html>
