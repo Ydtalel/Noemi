@@ -633,30 +633,27 @@ header::before {
 .latest-post-item-content {
   padding: 0;
   margin: 0 0 20px 0;
-  width: 191px;
-
+  max-width: 191px;
   color: #000000;
-  
 }
 
 .latest-post-data {
-  margin-top: -8px;
+  margin-top: 0px;
   padding-left: 10px;
   min-height: 80px;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
+}
+.latest-post-data:first-child {
+  margin-top: -8px;
 }
 
 .latest-post-data h6 {
   font-family: 'Open Sans Regular', Arial, sans-serif;
   font-size: 12px;
   line-height: 40px;
-
-}
-
-.latest-post-data h6:first-child {
   margin: 0 0 0 0;
-}
 
+}
 .latest-post-data h4 {
   font-family: 'Open Sans Bold', Arial, sans-serif;
   text-transform: uppercase;
@@ -666,8 +663,6 @@ header::before {
   margin-top: -10px;
   margin-bottom: 20px;
 }
-
-
 
 .side-bar-search {
   margin: 30px 0 59px 0;
