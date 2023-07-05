@@ -622,8 +622,10 @@ header::before {
 }
 
 .latest-post-photo {
-
+  background-color: #f4f7f6;
   margin-bottom: 20px;
+  height: 70px;
+
 }
 
 .latest-post-photo:first-child {
@@ -882,8 +884,9 @@ input[type="email"]::placeholder {
   z-index: -2;
   display: block;
   width: 300px;
-  height: auto;
+  height: 204px;
   margin-bottom: -18px;
+  background-color: #eff6f1;
 
 }
 
