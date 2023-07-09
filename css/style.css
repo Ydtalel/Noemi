@@ -1003,7 +1003,7 @@ input[type="email"]::placeholder {
   }
   .header {
     background-image: url("../images/banner-mobile.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
