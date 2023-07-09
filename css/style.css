@@ -1042,7 +1042,7 @@ input[type="email"]::placeholder {
     min-height: 230px;
     margin-bottom: 4px;
     background-position: center 90%;
-    margin: auto;  
+    margin: 3px auto 0;  
   }
   .item-content {
     max-width: 100%;
@@ -1077,12 +1077,16 @@ input[type="email"]::placeholder {
   .post-item:not(:last-child) {
     border-bottom: 3px solid #eeeeee;
   }
+  .post-photo {
+    margin: auto 30px auto auto;
+  }
   
   .post-photo img {
     width: 100%;
     min-width: 330px;
     margin-bottom: 8px;
   }
+
   .post-category span:not(:last-child) {
     margin-right: 15px;
   }
