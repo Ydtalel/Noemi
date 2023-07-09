@@ -1042,6 +1042,7 @@ input[type="email"]::placeholder {
     min-height: 230px;
     margin-bottom: 4px;
     background-position: center 90%;
+    margin: auto;  
   }
   .item-content {
     max-width: 100%;
@@ -1221,10 +1222,13 @@ input[type="email"]::placeholder {
   }
   .trend-flex-container{
     flex-wrap: wrap;
+    justify-content: center; 
   }
+
   .trend-flex-container-item {
     flex-basis: calc(50% - 3px);
     margin-bottom: 3px;
+    margin: auto;
   }
   .item-tag {
     line-height: 37.2px;
