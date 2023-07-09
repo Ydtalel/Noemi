@@ -15,6 +15,9 @@
     <header class="header">
       <div class="container">
         <div class="nav">
+          <div class="menu-burger">
+            <span></span>
+          </div>
           <a href="#"><img src="svg/noemi-logo.svg" alt="logo" /></a>
           <ul class="menu text-h2">
             <li><a class="text-h2" href="#">Главная</a></li>
@@ -90,7 +93,7 @@
               <a href="#" class="item-tag">Lifestyle</a>
               <a href="#" class="item-tag">INTERIOR</a>
             </div>
-            <p class="item-text">Сейчас в тренде: сад на подоконнике</p>
+            <a class="item-text" href="#">Сейчас в тренде: сад на подоконнике</a>
           </div>
         </div>
         <div class="trend-flex-container-item item2">
@@ -98,9 +101,7 @@
             <div class="item-tags">
               <a href="#" class="item-tag">Food</a>
             </div>
-            <p class="item-text">
-              сыры на красивых картинках из интернета: какие они на вкус?
-            </p>
+            <a class="item-text" href="#">сыры на красивых картинках из интернета: какие они на вкус?</a>       
           </div>
         </div>
         <div class="trend-flex-container-item item3">
@@ -109,7 +110,7 @@
               <a href="#" class="item-tag">Lifestyle</a>
               <a href="#" class="item-tag">tRAVEL</a>
             </div>
-            <p class="item-text">СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ</p>
+            <a class="item-text" href="#">СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ</a>
           </div>
         </div>
         <div class="trend-flex-container-item item4">
@@ -118,9 +119,7 @@
               <a href="#" class="item-tag">food</a>
               <a href="#" class="item-tag">health</a>
             </div>
-            <p class="item-text">
-              Сейчас в тренде: сКОЛЬКО ВИТАМИНА c В ЛИМОНАХ?
-            </p>
+            <a class="item-text" href="#">Сейчас в тренде: сКОЛЬКО ВИТАМИНА c В ЛИМОНАХ?</a>
           </div>
         </div>
       </div>
@@ -204,7 +203,7 @@
                   Лето на носу, а с ним и музыкальные фестивали. На каком же из
                   них вы разобьете свою палатку?
                 </p>
-                <br />
+
                 <p>
                   Мы составили список лучших летних фестивалей по всему миру.
                 </p>
@@ -402,13 +401,19 @@
       <div class="product">
         <div class="product-card">
           <div class="product-card-image">
-            <img src="images/shop-item-desk1.jpg" alt="pillow" />
+            <picture>
+              <source media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg">
+              <source media="(max-width: 1199px)" srcset="images/shop-item-tablet1.jpg">
+              <source media="(min-width: 1200px)" srcset="images/shop-item-desk1.jpg">
+              <img src="images/shop-item-desk1.jpg" alt="pillow" />
+            </picture>
           </div>
           <div class="product-card-description">
             <h3 class="product-card-title text-h1">Подушки на диван</h3>
             <p class="product-card-text text-h3">
               Набор из двух подушек с модными принтами. Видео о создании
               <a href="#">здесь</a>
+            </p>
             <div class="product-card-footer">
               <div class="price-container">
                 <span class="price-discount text-h1">1000 ₽</span>
@@ -427,7 +432,12 @@
         </div>
         <div class="product-card">
           <div class="product-card-image">
-            <img src="images/shop-item-desk2.jpg" alt="rabbit" />
+            <picture>
+              <source media="(max-width: 640px)" srcset="images/shop-item-mobile2.jpg">
+              <source media="(max-width: 1199px)" srcset="images/shop-item-tablet2.jpg">
+              <source media="(min-width: 1200px)" srcset="images/shop-item-desk2.jpg">
+              <img src="images/shop-item-desk2.jpg" alt="rabbit" />
+            </picture>
           </div>
           <div class="product-card-description">
             <h3 class="product-card-title text-h1">Кукла «Зайчик»</h3>
@@ -435,7 +445,7 @@
               Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена
               <a href="#">весенняя серия постов</a> в блоге и несколько
               подкастов.
-            </p>
+            </p>       
             <div class="product-card-footer">
               <div class="price-container">
                 <span class="price text-h1">3500 ₽</span>
@@ -453,16 +463,19 @@
         </div>
         <div class="product-card">
           <div class="product-card-image">
-            <img src="images/shop-item-desk3.jpg" alt="frame" />
+            <picture>
+              <source media="(max-width: 640px)" srcset="images/shop-item-mobile3.jpg">
+              <source media="(max-width: 1199px)" srcset="images/shop-item-tablet3.jpg">
+              <source media="(min-width: 1200px)" srcset="images/shop-item-desk3.jpg">
+              <img src="images/shop-item-desk3.jpg" alt="frame" />
+            </picture>
           </div>
           <div class="product-card-description">
             <h3 class="product-card-title text-h1">Шестиугольная рамка</h3>
             <p class="product-card-text text-h3">
               Необычная рамка для украшения дома из видео
-              <a href="#"
-                >«Как сделать рамку из подручных средств за 30 минут»</a
-              >
-            </p>
+              <a href="#">«Как сделать рамку из подручных средств за 30 минут»</a>
+            </p>  
             <div class="product-card-footer">
               <div class="price-container">
                 <span class="price-discount text-h1">500 ₽</span>
