@@ -11,7 +11,7 @@
     <title>Diploma</title>
   </head>
   <body>
-    <!--header-->
+    <!-- header -->
     <header class="header">
       <div class="container">
         <div class="nav">
@@ -36,7 +36,9 @@
     <!--popup-->
     <div id="popup" class="overlay _hidden">
       <div class="feedback-form">
-        <a class="close" href="#"><img src="svg/form-x.svg" /></a>
+        <button class="close-button" type="button">
+          <img class="close-button-icon" src="svg/form-x.svg" alt="Close" />
+        </button>
         <div class="feedback-form-content">
           <h2 class="feedback-form-title text-h1">Ваш фидбек</h2>
           <div class="feedback-form-divider"></div>
@@ -93,7 +95,9 @@
               <a href="#" class="item-tag">Lifestyle</a>
               <a href="#" class="item-tag">INTERIOR</a>
             </div>
-            <a class="item-text" href="#">Сейчас в тренде: сад на подоконнике</a>
+            <a class="item-text" href="#"
+              >Сейчас в тренде: сад на подоконнике</a
+            >
           </div>
         </div>
         <div class="trend-flex-container-item item2">
@@ -101,7 +105,9 @@
             <div class="item-tags">
               <a href="#" class="item-tag">Food</a>
             </div>
-            <a class="item-text" href="#">сыры на красивых картинках из интернета: какие они на вкус?</a>       
+            <a class="item-text" href="#"
+              >сыры на красивых картинках из интернета: какие они на вкус?</a
+            >
           </div>
         </div>
         <div class="trend-flex-container-item item3">
@@ -119,7 +125,9 @@
               <a href="#" class="item-tag">food</a>
               <a href="#" class="item-tag">health</a>
             </div>
-            <a class="item-text" href="#">Сейчас в тренде: сКОЛЬКО ВИТАМИНА c В ЛИМОНАХ?</a>
+            <a class="item-text" href="#"
+              >Сейчас в тренде: сКОЛЬКО ВИТАМИНА c В ЛИМОНАХ?</a
+            >
           </div>
         </div>
       </div>
@@ -140,7 +148,9 @@
                   <span><a href="#">Health</a></span>
                 </div>
                 <h3 class="post-title">
-                  10 мест, ради которых стоит проснуться на рассвете
+                  <a href="#"
+                    >10 мест, ради которых стоит проснуться на рассвете</a
+                  >
                 </h3>
                 <div class="post-author-date">
                   <span class="post-date">10 июня 2019 </span>
@@ -166,7 +176,7 @@
                   <span><a href="#">lifestyle</a></span>
                 </div>
                 <h3 class="post-title">
-                  ЙОга для начинающих в домашних условиях
+                  <a href="#">ЙОга для начинающих в домашних условиях</a>
                 </h3>
                 <div class="post-author-date">
                   <span class="post-date">10 июня 2019 </span>
@@ -191,7 +201,7 @@
                   <span><a href="#">music</a></span>
                 </div>
                 <h3 class="post-title">
-                  Лучшие музыкальные фестивали этого лета
+                  <a href="#">Лучшие музыкальные фестивали этого лета</a>
                 </h3>
                 <div class="post-author-date">
                   <span class="post-date">10 июня 2019 </span>
@@ -220,7 +230,9 @@
                   <span><a href="#">LYFESTYLE</a></span>
                   <span><a href="#">FOOD</a></span>
                 </div>
-                <h3 class="post-title">Наукоёмкий подход к кулинарии</h3>
+                <h3 class="post-title">
+                  <a href="#">Наукоёмкий подход к кулинарии</a>
+                </h3>
                 <div class="post-author-date">
                   <span class="post-date">10 июня 2019 </span>
                   <span class="post-author">Неизвестный автор </span>
@@ -246,7 +258,7 @@
                   <span><a href="#">art</a></span>
                 </div>
                 <h3 class="post-title">
-                  делаем модные принты на подушках для интерьера
+                  <a href="#">делаем модные принты на подушках для интерьера</a>
                 </h3>
                 <div class="post-author-date">
                   <span class="post-date">10 июня 2019 </span>
@@ -263,12 +275,12 @@
             </div>
           </div>
         </div>
-        <div class="side-bar">
-          <div class="side-bar-content">
+        <aside class="side-bar">
+          <section class="side-bar-content">
             <div class="side-bar-title">
               <h4>Новые посты</h4>
             </div>
-            <div class="latest-post-list">
+            <section class="latest-post-list">
               <div class="latest-post-item">
                 <div class="latest-post-item-photo">
                   <img src="images/2.jpg" alt="travel" />
@@ -324,71 +336,76 @@
                   </a>
                 </div>
               </div>
-            </div>
-            <form class="side-bar-search">
-              <label for="search-input" class="visually-hidden">Введите поисковый запрос:</label>
-              <input type="text" id="search-input" placeholder="Найти..." />
-              <button type="submit">
-                <span class="visually-hidden">Поиск</span>
-                <span class="search-icon">
-                  <img src="svg/search.svg" alt="loupe" />
-                </span>
-              </button>
-            </form>
-            
+            </section>
+            <section>
+              <form class="side-bar-search">
+                <label for="search-input" class="visually-hidden"
+                  >Введите поисковый запрос:</label
+                >
+                <input type="text" id="search-input" placeholder="Найти..." />
+                <button type="submit">
+                  <span class="visually-hidden">Поиск</span>
+                  <span class="search-icon" aria-hidden="true"></span>
+                </button>
+              </form>
+            </section>
             <div class="side-bar-title">
               <h4>рассылка</h4>
             </div>
-            <div class="side-bar-subscribe">
+            <section class="side-bar-subscribe">
               <input type="email" placeholder="Ваш email-адрес" />
               <button class="side-bar-subscribe-button" type="submit">
                 Подписаться
               </button>
-            </div>
+            </section>
             <div class="side-bar-title">
               <h4>теги</h4>
             </div>
-            <ul class="side-bar-tags">
-              <li><a href="#">fashion</a></li>
-              <li><a href="#">music</a></li>
-              <li><a href="#">lifestyle</a></li>
-              <li><a href="#">art</a></li>
-              <li><a href="#">interior</a></li>
-              <li><a href="#">travel</a></li>
-              <li><a href="#">food</a></li>
-              <li><a href="#">health</a></li>
-            </ul>
+            <section>
+              <ul class="side-bar-tags">
+                <li><a href="#">fashion</a></li>
+                <li><a href="#">music</a></li>
+                <li><a href="#">lifestyle</a></li>
+                <li><a href="#">art</a></li>
+                <li><a href="#">interior</a></li>
+                <li><a href="#">travel</a></li>
+                <li><a href="#">food</a></li>
+                <li><a href="#">health</a></li>
+              </ul>
+            </section>
             <div class="side-bar-title">
               <h4>темы</h4>
             </div>
-            <ul class="side-bar-categories">
-              <li class="category">
-                <a href="#" class="category-name">Красота</a>
-                <span class="article-count">12</span>
-              </li>
-              <li class="category">
-                <a href="#" class="category-name">Здоровье</a>
-                <span class="article-count">4</span>
-              </li>
-              <li class="category">
-                <a href="#" class="category-name">Образ жизни</a>
-                <span class="article-count">145</span>
-              </li>
-              <li class="category">
-                <a href="#" class="category-name">Музыка</a>
-                <span class="article-count">28</span>
-              </li>
-              <li class="category">
-                <a href="#" class="category-name">спорт</a>
-                <span class="article-count">62</span>
-              </li>
-              <li class="category">
-                <a href="#" class="category-name">Йога</a>
-                <span class="article-count">8</span>
-              </li>
-            </ul>
-          </div>
-        </div>
+            <section>
+              <ul class="side-bar-categories">
+                <li class="category">
+                  <a href="#" class="category-name">Красота</a>
+                  <span class="article-count">12</span>
+                </li>
+                <li class="category">
+                  <a href="#" class="category-name">Здоровье</a>
+                  <span class="article-count">4</span>
+                </li>
+                <li class="category">
+                  <a href="#" class="category-name">Образ жизни</a>
+                  <span class="article-count">145</span>
+                </li>
+                <li class="category">
+                  <a href="#" class="category-name">Музыка</a>
+                  <span class="article-count">28</span>
+                </li>
+                <li class="category">
+                  <a href="#" class="category-name">спорт</a>
+                  <span class="article-count">62</span>
+                </li>
+                <li class="category">
+                  <a href="#" class="category-name">Йога</a>
+                  <span class="article-count">8</span>
+                </li>
+              </ul>
+            </section>
+          </section>
+        </aside>
       </main>
     </div>
     <!--конец post & side-bar-->
@@ -402,9 +419,18 @@
         <div class="product-card">
           <div class="product-card-image">
             <picture>
-              <source media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg">
-              <source media="(max-width: 1199px)" srcset="images/shop-item-tablet1.jpg">
-              <source media="(min-width: 1200px)" srcset="images/shop-item-desk1.jpg">
+              <source
+                media="(max-width: 640px)"
+                srcset="images/shop-item-mobile1.jpg"
+              />
+              <source
+                media="(max-width: 1199px)"
+                srcset="images/shop-item-tablet1.jpg"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="images/shop-item-desk1.jpg"
+              />
               <img src="images/shop-item-desk1.jpg" alt="pillow" />
             </picture>
           </div>
@@ -433,9 +459,18 @@
         <div class="product-card">
           <div class="product-card-image">
             <picture>
-              <source media="(max-width: 640px)" srcset="images/shop-item-mobile2.jpg">
-              <source media="(max-width: 1199px)" srcset="images/shop-item-tablet2.jpg">
-              <source media="(min-width: 1200px)" srcset="images/shop-item-desk2.jpg">
+              <source
+                media="(max-width: 640px)"
+                srcset="images/shop-item-mobile2.jpg"
+              />
+              <source
+                media="(max-width: 1199px)"
+                srcset="images/shop-item-tablet2.jpg"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="images/shop-item-desk2.jpg"
+              />
               <img src="images/shop-item-desk2.jpg" alt="rabbit" />
             </picture>
           </div>
@@ -445,7 +480,7 @@
               Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена
               <a href="#">весенняя серия постов</a> в блоге и несколько
               подкастов.
-            </p>       
+            </p>
             <div class="product-card-footer">
               <div class="price-container">
                 <span class="price text-h1">3500 ₽</span>
@@ -464,9 +499,18 @@
         <div class="product-card">
           <div class="product-card-image">
             <picture>
-              <source media="(max-width: 640px)" srcset="images/shop-item-mobile3.jpg">
-              <source media="(max-width: 1199px)" srcset="images/shop-item-tablet3.jpg">
-              <source media="(min-width: 1200px)" srcset="images/shop-item-desk3.jpg">
+              <source
+                media="(max-width: 640px)"
+                srcset="images/shop-item-mobile3.jpg"
+              />
+              <source
+                media="(max-width: 1199px)"
+                srcset="images/shop-item-tablet3.jpg"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="images/shop-item-desk3.jpg"
+              />
               <img src="images/shop-item-desk3.jpg" alt="frame" />
             </picture>
           </div>
@@ -474,8 +518,10 @@
             <h3 class="product-card-title text-h1">Шестиугольная рамка</h3>
             <p class="product-card-text text-h3">
               Необычная рамка для украшения дома из видео
-              <a href="#">«Как сделать рамку из подручных средств за 30 минут»</a>
-            </p>  
+              <a href="#"
+                >«Как сделать рамку из подручных средств за 30 минут»</a
+              >
+            </p>
             <div class="product-card-footer">
               <div class="price-container">
                 <span class="price-discount text-h1">500 ₽</span>
@@ -497,12 +543,25 @@
     <!-- конец product-->
 
     <!--footer-->
+    <!--footer-->
     <div class="footer">
       <div class="footer-social">
         <ul class="footer-social-list">
-          <li><a href="#"><img class="foter-social-logo" src="svg/001-dribbble.svg" alt="social-link"></a></li>
-          <li><a href="#"><img class="foter-social-logo" src="svg/001-pinterest.svg" alt="social-link"></a></li>
-          <li><a href="#"><img class="foter-social-logo" src="svg/003-tumblr.svg" alt="social-link"></a></li>
+          <li>
+            <a href="#" class="footer-social-link dribbble"
+              ><span>dribbble social link</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="footer-social-link pinterest"
+              ><span>pinterest social link</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="footer-social-link tumblr"
+              ><span>tumblr social link</span></a
+            >
+          </li>
         </ul>
       </div>
       <div class="footer-copyrights">
@@ -511,7 +570,7 @@
         </h3>
       </div>
     </div>
-    
+
     <!-- конец footer-->
   </body>
 </html>
