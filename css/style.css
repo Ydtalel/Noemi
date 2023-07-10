@@ -178,18 +178,31 @@ header::before {
   top: 5vh;
 }
 
-.feedback-form a img {
+.close-button {
   position: absolute;
-  top: -30px;
-  right: 0px;
+  top: -35px;
+  right: 0;
   transition: all 200ms;
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
   width: 20px;
   height: 20px;
-  background-image: url("../svg/form-x.svg");
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.close-button-icon {
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
+  background-position: center;
+}
+
+.close-button:focus {
+  outline: none;
 }
 
 .feedback-form-content {
@@ -505,15 +518,16 @@ main {
 .post-category span a:hover {
   text-decoration: underline;
 }
-.post-title {
+.post-title a {
   font-family: "Open Sans Bold", Arial, sans-serif;
   font-size: 20px;
   line-height: 24px;
   margin: -3px 0px 15px 0px;
   text-transform: uppercase;
   color: #0f0d0e;
+  text-decoration: none;
 }
-.post-title:hover {
+.post-title a:hover {
   color: #b59f5b;
 }
 
@@ -655,7 +669,11 @@ main {
 
 /*-----------*/
 .visually-hidden {
-  display: none;
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 .side-bar-search input[type="text"] {
@@ -697,12 +715,9 @@ main {
 .side-bar-search button[type="submit"] .search-icon {
   width: 18px;
   height: 18px;
-}
-
-.side-bar-search button[type="submit"] .search-icon img {
-  display: block;
-  width: 100%;
-  height: 100%;
+  background-image: url("../svg/search.svg");
+  background-repeat: no-repeat;
+  /* Дополнительные стили для фонового изображения */
 }
 
 .side-bar-subscribe input[type="email"] {
@@ -955,12 +970,8 @@ input[type="email"]::placeholder {
   height: 83px;
   background-color: #f4f7f6;
   margin-top: 68px;
-  list-style: none; /* Удаляем маркеры списка */
-  padding: 0; /* Удаляем внутренний отступ списка */
-}
-
-.foter-social-logo {
-  width: 20px;
+  list-style: none;
+  padding: 0;
 }
 
 .footer-social-list li {
@@ -971,9 +982,36 @@ input[type="email"]::placeholder {
 .footer-social-list li:first-child {
   margin-left: 0px;
 }
-.footer-social-list a {
-  text-decoration: none;
+
+.footer-social-link {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
+
+.footer-social-link.dribbble {
+  background-image: url("../svg/001-dribbble.svg");
+}
+
+.footer-social-link.pinterest {
+  background-image: url("../svg/001-pinterest.svg");
+}
+
+.footer-social-link.tumblr {
+  background-image: url("../svg/003-tumblr.svg");
+}
+
+.footer-social-link span {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .footer-copyrights {
   height: 130px;
 }
@@ -1087,10 +1125,14 @@ input[type="email"]::placeholder {
     margin-bottom: 8px;
   }
 
+  .post-category {
+    height: 35px;
+  }
+
   .post-category span:not(:last-child) {
     margin-right: 15px;
   }
-  .post-title {
+  .post-title a{
     margin-bottom: 25px;
     font-size: 15.8px;
     line-height: 20px;
