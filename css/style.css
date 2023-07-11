@@ -1029,6 +1029,58 @@ input[type="email"]::placeholder {
 
 /* Media Queries */
 
+@media (max-width: 639px) and (orientation: landscape) {
+  .trend-flex-container {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  
+  .trend-flex-container-item {
+    display: flex;
+    width: calc(50% - 7.5px);
+  }
+
+  .trend-flex-container-item:nth-child(2n) {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 639px) and (orientation: portrait) {
+  .trend {
+    margin-top: 21px;
+    }
+  
+    .trend-title{
+      font-size: 16px;
+      line-height: normal;
+    }
+  
+    .trend-flex-container-item {
+      min-width: 360px;
+      min-height: 230px;
+      margin-bottom: 4px;
+      background-position: center 90%;
+      margin: 3px auto 0;  
+    }
+  
+    .item-content {
+      max-width: 100%;
+      margin-right: 15px;
+      margin-left: 15px;
+      padding-left: 20px;
+      padding-bottom: 25px;
+    }
+    .item-tags {
+      line-height: 37.2px;
+    }
+    .item-text {
+      font-size: 16px;
+      line-height: 20px;
+    }
+}
+
 @media (max-width: 639px) {
   .menu {
     display: none;
@@ -1066,36 +1118,7 @@ input[type="email"]::placeholder {
     margin-top: 0px;
   }
 
-  .trend {
-  margin-top: 21px;
-  }
-
-  .trend-title{
-    font-size: 16px;
-    line-height: normal;
-  }
-
-  .trend-flex-container-item {
-    min-width: 360px;
-    min-height: 230px;
-    margin-bottom: 4px;
-    background-position: center 90%;
-    margin: 3px auto 0;  
-  }
-  .item-content {
-    max-width: 100%;
-    margin-right: 15px;
-    margin-left: 15px;
-    padding-left: 20px;
-    padding-bottom: 25px;
-  }
-  .item-tags {
-    line-height: 37.2px;
-  }
-  .item-text {
-    font-size: 16px;
-    line-height: 20px;
-  }
+  
 
   main {
     flex-direction: column;
@@ -1246,46 +1269,55 @@ input[type="email"]::placeholder {
   }
 }
 
-@media (min-width: 640px) and (max-width: 1199px) {
-  .menu {
-    display: none;
+@media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
+  .trend-flex-container {
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  .container {
-    min-width: 698px;
-    min-height: 390px;
-    padding: 0 35px;
+
+  .trend-flex-container-item {
+    flex-basis: calc(25% - 6px);
+    margin-bottom: 6px;
   }
-  .menu-burger {
-    top: 50px;
-    right: 30px;
+
+  .trend-flex-container-item:not(:last-child) {
+    margin-right: 3px;
   }
-  .header {
-    background-image: url("../images/banner-bg-tablet.jpg");
-  }
-  .nav {
-    padding-top: 40px;
-  }
-  .nav img {
-    height: 35px;
-  }
-  .intro.text-h1 {
-    font-size: 40px;
-    line-height: 55px;
-    max-width: 640px;
+}
+
+@media (min-width: 640px) and (max-width: 1199px) and (orientation: portrait) {
+  .trend {
+    margin-top: 25px;
+    width: 100%;
   }
   .trend-title{
     font-size: 18px;
   }
   .trend-flex-container{
+    margin-top: 28px;
     flex-wrap: wrap;
     justify-content: center; 
+    margin-bottom: 7px;
   }
 
   .trend-flex-container-item {
     flex-basis: calc(50% - 3px);
     margin-bottom: 3px;
-    margin: auto;
+    min-height: 245px;
   }
+
+  .trend-flex-container-item:nth-child(2n) {
+    margin-left: 3px;
+  }
+  .item1, .item2, .item3, .item4 {
+    background-position: 50% 98%;
+  }
+  .item-content {
+    padding-left: 25px;
+    padding-bottom: 29px;
+    margin-right: 20px;
+  }
+
   .item-tag {
     line-height: 37.2px;
   }
@@ -1293,6 +1325,43 @@ input[type="email"]::placeholder {
     font-size: 17px;
     line-height: 22px;
   }
+}
+
+@media (min-width: 640px) and (max-width: 1199px) {
+  .menu {
+    display: none;
+  }
+  .container {
+    width: calc(100% - 70px);
+    padding: 0 35px;
+  }
+  .menu-burger {
+    top: 53px;
+    right: 0px;
+  }
+  .header {
+    width: 100%;
+    min-height: 13vh;
+    background-image: url("../images/banner-bg-tablet.jpg");
+    background-size: cover;
+  }
+  .nav {
+    width: calc(100% - 70px);
+    padding-top: 45px;
+    margin-bottom: 86px;
+  }
+  .nav img {
+    height: 35px;
+    padding-left: 0;
+  }
+  .intro.text-h1 {
+    width: calc(100% - 60px);
+    font-size: 40px;
+    line-height: 55px;
+    max-width: 640px;
+    padding: 0 30px;
+  }
+  
 
 
   main {
@@ -1301,31 +1370,36 @@ input[type="email"]::placeholder {
   }
 
   .post-container {
-    width: 51.25%;
+    width: 59%;
   }
 
   .side-bar {
-    width: calc(48.75% - 35px);
+    width: 41%;
     margin-left: 35px;
   }
   .side-bar-content {
-    margin-left: 35px;
+    margin-left: 0px;
   }
 
   .post-item {
     flex-direction: column;
+    margin-bottom: 40px;
+    width: 100%;
   }
   .post-item:not(:last-child) {
     border-bottom: 3px solid #eeeeee;
   }
+  .post-photo {
+    margin-right: 0;
+  }
 
   .post-photo img {
     margin-right: 0;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     width: 100%;
-    min-width: 390px;
+
   }
-  .post-title {
+  .post-title a {
     font-size: 17px;
     line-height: 22px;
   }
@@ -1333,19 +1407,38 @@ input[type="email"]::placeholder {
   .post-content {
     margin-top: 0;
   }
+  .post-category {
+    height: 33px;
+  }
   .post-text {
     margin-bottom: 25px;
   }
   .product-title {
     font-size: 18px;
   }
+
+  .post-author-date{
+    margin: 16px 0;
+  }
+
+  .post-text {
+    margin-bottom: 19px;
+  }
+
   .product {
     flex-wrap: wrap;
-    
+    justify-content: start;
   }
+  .product-title h4 {
+    margin-top: 43px;
+    margin-bottom: 9px;
+    font-size: 18px;
+  }
+
   .product-card {
-    width: 44%;
-    max-width: 330px;
+    width: 50%;
+    min-width: 35%;
+    max-width: 50%;
     padding-left: 0;
     margin-top: 30px;
   }
@@ -1353,15 +1446,24 @@ input[type="email"]::placeholder {
     margin-left: 0;
   }
   .product-card-image img {
-    max-width: 291px;
+   
+    width: 86%;
     margin: 0 auto;
   }
+  .product-card-description {
+    margin-top: -39px;
+    padding-bottom: 30px;
+  }
+
   .product-card-text.text-h3 {
     width: 100%;
   }
   .product-card-title.text-h1 {
     font-size: 17px;
     line-height: 22px;
+  }
+  .price.text-h1 {
+    min-height: 26px;
   }
 
   .footer {
@@ -1375,7 +1477,11 @@ input[type="email"]::placeholder {
     margin-top:50px;
   }
   .footer-social-list {
-    margin-top: 40px;
+    margin-top: 44px;
+  }
+  .footer-copyrights-text.text-h1 {
+    margin-top: 32px;
+    padding-left: 20px;
   }
 }
 
